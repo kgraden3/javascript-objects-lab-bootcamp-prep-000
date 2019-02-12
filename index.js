@@ -1,5 +1,7 @@
 var recipes = { prop: '1'}
-const obj = { prop: '1'}
+var obj = { prop: '1'}
+var newObj = Object.assign({}, obj)
+
 
 function updateObjectWithKeyAndValue(object, key, value){
   var obj = { prop: '1'}
@@ -13,7 +15,6 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
 
 function deleteFromObjectByKey(obj, key){
 var obj = { prop: '1'}
-var newObj = Object.assign({}, obj)
 delete newobj.prop
 return newObj
 }
