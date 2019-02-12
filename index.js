@@ -1,12 +1,12 @@
 var recipes = { prop: '1'}
 const obj = { prop: '1'}
 
-function updateObjectWithKeyAndValue(object, 'prop2', '2'){
+function updateObjectWithKeyAndValue(object, key, value){
   var obj = { prop: '1'}
   return Object.assign({}, obj, { ['prop2']: "2" })
 }
 
-function destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
+function destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', '2'){
   obj['prop2'] = '2'
   return obj
 }
