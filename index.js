@@ -4,7 +4,6 @@ var newObj = Object.assign({}, obj)
 
 
 function updateObjectWithKeyAndValue(object, key, value){
-  var obj = { prop: '1'}
   return Object.assign({}, obj, { ['prop2']: "2" })
 }
 
@@ -13,8 +12,7 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value){
   return obj
 }
 
-function deleteFromObjectByKey(obj, key){
-var obj = { prop: '1'}
+function deleteFromObjectByKey(newObj, key){
 delete newobj.prop
 return newObj
 }
